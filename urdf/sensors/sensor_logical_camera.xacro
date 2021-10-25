@@ -9,7 +9,7 @@
   <xacro:macro name="log_cam"
     params="log_cam_name log_cam_px log_cam_py log_cam_pz log_cam_or log_cam_op log_cam_oy">
 
-    <link name="$(arg tf_prefix)${log_cam_name}_link">
+    <link name="$(arg tf_prefix)${log_cam_name}_link"/>
 
     <joint name="$(arg robot_name)_${log_cam_name}_joint" type="fixed">
       <parent link="$(arg tf_prefix)${log_cam_parent}" />
